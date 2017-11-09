@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .box1 {
+            height: 350px;
+            position: relative;
+            background-color: skyblue;
+        }
+        button {
+            width: 80px;
+            height: 40px;
+            cursor: pointer;
+            font-size: 20px;
+            margin: 20px;
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        <button>到200</button>
+        <button>到400</button>
+        <div class="box2" id="box2">
+            忠厚传家久，诗书济世长...
+        </div>
+    </div>
+    <script>
+        var btn=document.getElementsByTagName("button");
+        var box2=document.getElementById("box2");
+        var timer1 = 0;
+        var timer2 = 0;
+//        当按钮被点击时
+        btn[1].onclick=function(){
+//            当先点击第一个按钮，再去点第二个按钮时，第一个定时器没有清除，会叠加到第二个事件，小方块会一直跳动
+//            clearInterval(timer1);
+            timer1=setInterval(function(){
+                box2.style.left=box2.offsetLeft+(400-box2.offsetLeft
+                        )/10+"px";
+
+
+            },100)
+
+        }
+
+
+        btn[0].onclick=function(){
+            clearInterval(timer2);
+            timer2=setInterval(function(){
+                box2.style.left=box2.offsetLeft+(200-box2.offsetLeft
+                        )/10+"px";
+                console.log(box2.style.left)
+                console.log(box2.offsetLeft)
+
+            },100)
+
+        }
+    </script>
+</body>
+</html>
