@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            color: red;
+        }
+        .top, .dian, .jia, .fu, .mei, .bottom {
+            width: 1210px;
+            margin: 0 auto;
+        }
+
+        .subnav {
+            position: fixed;
+            width: 38px;
+            height: 200px;
+            top: 200px;
+            left: 50%;
+            margin-left: 605px;
+            display: none;
+        }
+
+        .subnav li, .back {
+            height: 36px;
+            border: 1px solid #DEDEDE;
+            margin-bottom: 5px;
+            font-size: 0;
+            background: url(images/bg.png) no-repeat;
+        }
+
+        .subnav li:hover, .subnav li.current, .back {
+            border: 1px solid #ED5759;
+            background: #FDEEEE; /* 只有冲突的时候才会出现层叠 */
+            /* 背景颜色 背景图片 背景位置 背景平铺  背景固定 */
+            /* css 层叠样式表 */
+            font-size: 12px;
+            color: #ED5759;
+            padding-left: 6px;
+            padding-top: 2px;
+            height: 34px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="jquery-1.11.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            //需求1：页面滑动超过第一个盒子的高，显示subnav，否则隐藏;
+            //页面被卷去的部分是多少，给对应的li添加类名;(current);
+            //需求2：点击返回，页面跳转到最顶端;
+            //需求3：点击li，页面缓动到对应的图片区域;
+
+
+            //需求1：页面滑动超过第一个盒子的高，显示subnav，否则隐藏;
+            //页面被卷去的部分是多少，给对应的li添加类名;(current);
+            $(window).scroll(function () {
+                //获取被卷去的头部和第一个盒子的高，然后进行判断;
+                if( $(window).scrollTop() > 600 ){
+                    //页面被卷去的部分超过600就应该显示
+//                if( $(window).scrollTop() > $(".top").height() ){
+                    $(".subnav").show();
+                }else{
+                    $(".subnav").hide();
+                }
+
+                //随着页面滚动，对应的li添加类名;其他的删除类名;
+                if($(window).scrollTop() > $(".mei").offset().top){//大于第四个
+                    $(".subnav li").eq(3).addClass("current").siblings("li").removeClass("current");
+                }else if($(window).scrollTop() > $(".fu").offset().top){//大于第三个
+                    $(".subnav li").eq(2).addClass("current").siblings("li").removeClass("current");
+                }else if($(window).scrollTop() > $(".dian").offset().top){//大于第二个
+                    $(".subnav li").eq(1).addClass("current").siblings("li").removeClass("current");
+                }else if($(window).scrollTop() > $(".jia").offset().top){//大于第一个
+                    $(".subnav li").eq(0).addClass("current").siblings("li").removeClass("current");
+                }else{//小于第一个
+                    $(".subnav li").removeClass("current");
+                }
+
+            });
+
+            //需求2：点击返回，页面跳转到最顶端;
+            $(".back").click(function () {
+                //页面直接设置到最顶端;
+                $(window).scrollTop(0);
+            });
+            //需求3：点击li，页面缓动到对应的图片区域;
+            $(".subnav li").click(function () {
+                //页面要缓动到目标位置;( 不能用scrollTop() )
+                //页面缓动到目标位置;$("body,html").animate({"scrollTop",目标位置});
+                var target = $(".jd").eq($(this).index()).offset().top;
+                //谷歌：body;  IE: html;
+                $("body,html").animate({scrollTop: target});
+                //点击谁，谁有current类;
+                $(this).addClass("current").siblings("li").removeClass("current");
+
+            });
+        });
+    </script>
+</head>
+<body>
+
+
+<div class="top">
+    <img src="images/top1.png" alt=""/>
+</div>
+<div class="jd jia">
+    <img src="images/jia.png" alt=""/>
+</div>
+<div class="jd dian">
+    <img src="images/dian.png" alt=""/>
+</div>
+<div class="jd fu">
+    <img src="images/fu.png" alt=""/>
+</div>
+<div class="jd mei">
+    <img src="images/mei.png" alt=""/>
+</div>
+<div class="bottom">
+    <img src="images/bottom.png" alt=""/>
+</div>
+<div class="subnav">
+    <ul>
+        <li>电脑数码</li>
+        <li>家电通讯</li>
+        <li>服饰精品</li>
+        <li>美容珠宝</li>
+    </ul>
+    <div class="back">返回</div>
+
+</div>
+
+</body>
+</html>

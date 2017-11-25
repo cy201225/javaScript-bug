@@ -16,7 +16,7 @@
             height: 400px;
             position: relative;
             margin: 100px auto;
-            /*overflow: hidden;*/
+            overflow: hidden;
             border: 1px solid red;
         }
         .content {
@@ -51,66 +51,77 @@
     </script>
     <script>
         window.onload=function(){
-//            模拟滚动条
-//            当content的内容高度等于box时，不显示滚动条
+//            需求：；1.当滑动滑块时，页面内容也跟着滑动
+//            需要使用的元素：content，box，scrollBox，bar
+            var bar=document.getElementById("bar");
+            var content=document.getElementById("content");
+            var contentHeight=content.clientHeight;
             var box=document.getElementById("box");
-            var content=box.firstElementChild||box.firstChild;
-            var scrollBox=content.nextElementSibling||content.nextSibling;
-            var bar=scrollBox.children[0];
-
-//            bar高/scroll的高=box的高/content的高
-            var bili1=box.offsetHeight/content.clientHeight;
-
-            if(content.clientHeight>box.offsetHeight){
-//                显示滚动条
-                bar.style.height=bili1*scrollBox.offsetHeight+"px";
-            }else{
+            var scrollBox=document.getElementById("scrollBox");
+            var scrollHeight=scrollBox.clientHeight;
+            var boxHeight=box.offsetHeight;
+//            bar的高度:bar高/滚动部分的高=box的高/content的高
+//            创建比例
+            var bili1=boxHeight/contentHeight;
+            var barHeight=bili1*scrollHeight;
+            var yyyy=scrollHeight-barHeight;
+            var bili2 = (contentHeight-boxHeight)/yyyy;
+//            console.log(barHeight);
+//            1.滑块显示，直接设置高度，判断content里面的内容是否大于box
+            if(content.clientWidth>box.clientWidth){
                 return;
+            }else{
+                bar.style.height=barHeight+"px";
             }
-//            第二步：当点击滚轮时
-//            滚轮移动时，鼠标移动的距离和content移动距离成正比
-            bar.onmousedown=function(event){
-                event=event||window.event;
-//                鼠标移动前的距离
-                var prePageY=event.pageY||event.clientY+scroll().top;
-//                bar没有移动之前的距离
-                var preBar=bar.offsetTop;
-//                在鼠标移动之前，就获得了鼠标
-//                当鼠标移动时
-                document.onmousemove=function(event){
-//                    获取鼠标移动后的距离
-                    var pagey=event.pageY||event.clientY+scroll().top;
-                    var y=pagey-prePageY;
-                    var barY=bar.offsetTop;
-//                    给bar的移动范围赋值
-                    if(y<0){
-                        y=0;
-                    }
-                    if(y>scrollBox.offsetHeight-bar.offsetHeight){
-                        y=scrollBox.offsetHeight-bar.offsetHeight;
-                    }
-//                    将鼠标移动的位置给bar
-                    bar.style.top=y+"px";
-                    var barMove=barY-preBar;
-//                    content移动的距离/bar移动的距离=（content-box）/（scroll-bar）
-                    var bili2=(content.clientHeight-box.offsetHeight)/(scrollBox.offsetHeight-bar.offsetHeight);
-                    var contentMove=bili2*barMove;
-//                    将conten移动的距离给了content
-                    content.style.top=-contentMove+"px";
-                }
 
+//            2.当用鼠标点击滑块时，鼠标跟着移动。
+            bar.onmousedown=function(event){
+//                获取鼠标在盒子中的坐标=鼠标在页面的距离-盒子在页面的距离
+                var event=event||window.event;
+                var body=document.getElementsByTagName("body")[0];
+                var yy=event.pageY||event.clientY+scroll().top;
+//                盒子在页面的距离(只需要高，所以可以求body的高)
+//                鼠标-bar的top
+                var startY=yy-bar.offsetTop;
+                var temp=yy;
+//                当点击滑块时，将鼠标在盒子中的坐标赋值给滑块
+                document.onmousemove=function(event){
+//                    当点击滑块时，滑块移动的位置=/内容移动的距离=固定比例
+                    var pagey=event.pageY||event.clientY+scroll().top;
+//                    滑块移动的距离=滑块的位置-滑块的原来位置
+                    console.log(pagey);
+//                    bar的值=移动之后鼠标距离页面的距离-scroll距离
+                    var yyy=pagey-startY;
+                    console.log("yyy"+yyy);
+//                    判断：滑动在移动时，在页面的值不能小于body的值
+                    if(yyy<0){
+                        yyy=0;
+                    }
+                    console.log("scro"+scrollHeight);
+                    if(yyy>(scrollHeight-bar.clientHeight)){
+                        yyy=scrollHeight-bar.clientHeight;
+                    }
+                    bar.style.top=yyy+"px";
+
+//                    滑块移动的差值/文字移动的距离=滑块区域/box区域
+
+                    var temp=bili2*bar.offsetTop;
+                    content.style.top=-temp+"px";
+
+
+                    //清空选中内容的选中状态
+                    window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+                }
             }
             document.onmouseup=function(){
                 document.onmousemove=null;
             }
-
-//            bug1:当鼠标弹起，第二次点击滑块时，内容到达底部
         }
     </script>
 </head>
 <body>
 <div class="box" id="box">
-    <div class="content">
+    <div class="content" id="content">
         水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>
         水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>
         水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>
@@ -119,10 +130,10 @@
         水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>
         水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>
         水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>
-        水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>
-        水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>
-        水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>
-        水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>
+        <!--水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>-->
+        <!--水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>-->
+        <!--水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>-->
+        <!--水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>-->
         水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>
         水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>
         水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>
@@ -136,8 +147,8 @@
         水垢何曾相受，细看两俱无有，寄语揩背人，尽日劳君挥肘，轻手轻手，居士本来无垢...<br>
         ------end-------
     </div>
-    <div class="scrollBox">
-        <div class="bar"></div>
+    <div class="scrollBox" id="scrollBox">
+        <div class="bar"  id="bar"></div>
     </div>
 </div>
 </body>
