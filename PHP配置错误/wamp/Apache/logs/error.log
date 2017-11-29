@@ -1,0 +1,139 @@
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 10:48:51.721930 2017] [mpm_winnt:notice] [pid 12264:tid 696] AH00455: Apache/2.4.27 (Win64) configured -- resuming normal operations
+[Mon Nov 27 10:48:51.737516 2017] [mpm_winnt:notice] [pid 12264:tid 696] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Mon Nov 27 10:48:51.737516 2017] [core:notice] [pid 12264:tid 696] AH00094: Command line: 'E:\\wamp\\Apache\\bin\\httpd.exe -d E:/wamp/Apache'
+[Mon Nov 27 10:48:51.930326 2017] [mpm_winnt:notice] [pid 12264:tid 696] AH00418: Parent: Created child process 9736
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 10:48:54.353622 2017] [mpm_winnt:notice] [pid 9736:tid 636] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 27 11:01:10.035270 2017] [mpm_winnt:notice] [pid 12264:tid 696] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Nov 27 11:01:12.066932 2017] [mpm_winnt:notice] [pid 9736:tid 636] AH00364: Child: All worker threads have exited.
+[Mon Nov 27 11:01:12.097997 2017] [mpm_winnt:notice] [pid 12264:tid 696] AH00430: Parent: Child process 9736 exited successfully.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:09:09.430893 2017] [mpm_winnt:notice] [pid 10060:tid 684] AH00455: Apache/2.4.27 (Win64) configured -- resuming normal operations
+[Mon Nov 27 11:09:09.446342 2017] [mpm_winnt:notice] [pid 10060:tid 684] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Mon Nov 27 11:09:09.446342 2017] [core:notice] [pid 10060:tid 684] AH00094: Command line: 'E:\\wamp\\Apache\\bin\\httpd.exe -d E:/wamp/Apache'
+[Mon Nov 27 11:09:09.519535 2017] [mpm_winnt:notice] [pid 10060:tid 684] AH00418: Parent: Created child process 11568
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:09:11.375400 2017] [mpm_winnt:notice] [pid 11568:tid 608] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 27 11:29:38.830907 2017] [mpm_winnt:notice] [pid 10060:tid 684] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Nov 27 11:29:40.862560 2017] [mpm_winnt:notice] [pid 11568:tid 608] AH00364: Child: All worker threads have exited.
+[Mon Nov 27 11:29:40.893641 2017] [mpm_winnt:notice] [pid 10060:tid 684] AH00430: Parent: Child process 11568 exited successfully.
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:29:47.433265 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00455: Apache/2.4.27 (Win64) configured -- resuming normal operations
+[Mon Nov 27 11:29:47.433265 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Mon Nov 27 11:29:47.433265 2017] [core:notice] [pid 9464:tid 684] AH00094: Command line: 'E:\\wamp\\Apache\\bin\\httpd.exe -d E:/wamp/Apache'
+[Mon Nov 27 11:29:47.520728 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00418: Parent: Created child process 5772
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:29:49.768535 2017] [mpm_winnt:notice] [pid 5772:tid 632] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 27 11:32:21.151335 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00424: Parent: Received restart signal -- Restarting the server.
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:32:21.698083 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00455: Apache/2.4.27 (Win64) configured -- resuming normal operations
+[Mon Nov 27 11:32:21.698083 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Mon Nov 27 11:32:21.698083 2017] [core:notice] [pid 9464:tid 684] AH00094: Command line: 'E:\\wamp\\Apache\\bin\\httpd.exe -d E:/wamp/Apache'
+[Mon Nov 27 11:32:21.781004 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00418: Parent: Created child process 2440
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:32:24.169515 2017] [mpm_winnt:notice] [pid 2440:tid 676] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 27 11:32:25.992162 2017] [mpm_winnt:notice] [pid 5772:tid 632] AH00364: Child: All worker threads have exited.
+[Mon Nov 27 11:34:14.506198 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00424: Parent: Received restart signal -- Restarting the server.
+AH00112: Warning: DocumentRoot [E:/wamp/Apache/htdocs/1/index.html] does not exist
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:34:15.021788 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00455: Apache/2.4.27 (Win64) configured -- resuming normal operations
+[Mon Nov 27 11:34:15.021788 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Mon Nov 27 11:34:15.021788 2017] [core:notice] [pid 9464:tid 684] AH00094: Command line: 'E:\\wamp\\Apache\\bin\\httpd.exe -d E:/wamp/Apache'
+[Mon Nov 27 11:34:15.149118 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00418: Parent: Created child process 13176
+AH00112: Warning: DocumentRoot [E:/wamp/Apache/htdocs/1/index.html] does not exist
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+AH00112: Warning: DocumentRoot [E:/wamp/Apache/htdocs/1/index.html] does not exist
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:34:17.583518 2017] [mpm_winnt:notice] [pid 13176:tid 656] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 27 11:35:10.487658 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00424: Parent: Received restart signal -- Restarting the server.
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:35:10.987522 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00455: Apache/2.4.27 (Win64) configured -- resuming normal operations
+[Mon Nov 27 11:35:10.987522 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Mon Nov 27 11:35:10.987522 2017] [core:notice] [pid 9464:tid 684] AH00094: Command line: 'E:\\wamp\\Apache\\bin\\httpd.exe -d E:/wamp/Apache'
+[Mon Nov 27 11:35:11.096906 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00418: Parent: Created child process 6852
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:35:12.989753 2017] [mpm_winnt:notice] [pid 6852:tid 628] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 27 11:35:15.383117 2017] [mpm_winnt:notice] [pid 13176:tid 656] AH00364: Child: All worker threads have exited.
+[Mon Nov 27 11:38:46.968791 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00424: Parent: Received restart signal -- Restarting the server.
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:38:47.484457 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00455: Apache/2.4.27 (Win64) configured -- resuming normal operations
+[Mon Nov 27 11:38:47.484457 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Mon Nov 27 11:38:47.484457 2017] [core:notice] [pid 9464:tid 684] AH00094: Command line: 'E:\\wamp\\Apache\\bin\\httpd.exe -d E:/wamp/Apache'
+[Mon Nov 27 11:38:47.562415 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00418: Parent: Created child process 8376
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:38:48.977550 2017] [mpm_winnt:notice] [pid 6852:tid 628] AH00364: Child: All worker threads have exited.
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:38:50.055799 2017] [mpm_winnt:notice] [pid 8376:tid 468] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 27 11:40:28.142871 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00424: Parent: Received restart signal -- Restarting the server.
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:40:28.674034 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00455: Apache/2.4.27 (Win64) configured -- resuming normal operations
+[Mon Nov 27 11:40:28.674034 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Mon Nov 27 11:40:28.674034 2017] [core:notice] [pid 9464:tid 684] AH00094: Command line: 'E:\\wamp\\Apache\\bin\\httpd.exe -d E:/wamp/Apache'
+[Mon Nov 27 11:40:28.800783 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00418: Parent: Created child process 10404
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:40:31.049673 2017] [mpm_winnt:notice] [pid 10404:tid 636] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 27 11:40:34.042096 2017] [mpm_winnt:notice] [pid 8376:tid 468] AH00364: Child: All worker threads have exited.
+[Mon Nov 27 11:40:59.403595 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00424: Parent: Received restart signal -- Restarting the server.
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:40:59.919282 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00455: Apache/2.4.27 (Win64) configured -- resuming normal operations
+[Mon Nov 27 11:40:59.919282 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Mon Nov 27 11:40:59.919282 2017] [core:notice] [pid 9464:tid 684] AH00094: Command line: 'E:\\wamp\\Apache\\bin\\httpd.exe -d E:/wamp/Apache'
+[Mon Nov 27 11:41:00.013264 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00418: Parent: Created child process 5772
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:41:02.247247 2017] [mpm_winnt:notice] [pid 5772:tid 624] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 27 11:43:18.177026 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00424: Parent: Received restart signal -- Restarting the server.
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:43:18.677075 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00455: Apache/2.4.27 (Win64) configured -- resuming normal operations
+[Mon Nov 27 11:43:18.677075 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Mon Nov 27 11:43:18.677075 2017] [core:notice] [pid 9464:tid 684] AH00094: Command line: 'E:\\wamp\\Apache\\bin\\httpd.exe -d E:/wamp/Apache'
+[Mon Nov 27 11:43:18.772957 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00418: Parent: Created child process 4668
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:43:20.199470 2017] [mpm_winnt:notice] [pid 5772:tid 624] AH00364: Child: All worker threads have exited.
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:43:21.277712 2017] [mpm_winnt:notice] [pid 4668:tid 620] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 27 11:46:37.639620 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Nov 27 11:46:39.671124 2017] [mpm_winnt:notice] [pid 4668:tid 620] AH00364: Child: All worker threads have exited.
+[Mon Nov 27 11:46:39.686751 2017] [mpm_winnt:notice] [pid 9464:tid 684] AH00430: Parent: Child process 4668 exited successfully.
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:47:59.713451 2017] [mpm_winnt:notice] [pid 2920:tid 704] AH00455: Apache/2.4.27 (Win64) configured -- resuming normal operations
+[Mon Nov 27 11:47:59.713451 2017] [mpm_winnt:notice] [pid 2920:tid 704] AH00456: Apache Lounge VC15 Server built: Jul  7 2017 12:46:00
+[Mon Nov 27 11:47:59.713451 2017] [core:notice] [pid 2920:tid 704] AH00094: Command line: 'E:\\wamp\\Apache\\bin\\httpd.exe -d E:/wamp/Apache'
+[Mon Nov 27 11:47:59.728896 2017] [mpm_winnt:notice] [pid 2920:tid 704] AH00418: Parent: Created child process 4504
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+AH00112: Warning: DocumentRoot [C:/Apache24/docs/dummy-host2.example.com] does not exist
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::d63:8e0:f01c:b9ce. Set the 'ServerName' directive globally to suppress this message
+[Mon Nov 27 11:48:00.729005 2017] [mpm_winnt:notice] [pid 4504:tid 648] AH00354: Child: Starting 64 worker threads.
